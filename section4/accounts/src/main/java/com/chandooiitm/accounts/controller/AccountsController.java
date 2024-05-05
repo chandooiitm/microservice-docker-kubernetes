@@ -1,7 +1,6 @@
 package com.chandooiitm.accounts.controller;
 
 import com.chandooiitm.accounts.constants.AccountsConstants;
-import com.chandooiitm.accounts.dto.AccountsDto;
 import com.chandooiitm.accounts.dto.CustomerDto;
 import com.chandooiitm.accounts.dto.ErrorResponseDto;
 import com.chandooiitm.accounts.dto.ResponseDto;
@@ -12,11 +11,9 @@ import io.swagger.v3.oas.annotations.media.Schema;
 import io.swagger.v3.oas.annotations.responses.ApiResponse;
 import io.swagger.v3.oas.annotations.responses.ApiResponses;
 import io.swagger.v3.oas.annotations.tags.Tag;
-import io.swagger.v3.oas.annotations.tags.Tags;
 import jakarta.validation.Valid;
 import jakarta.validation.constraints.Pattern;
 import lombok.AllArgsConstructor;
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
