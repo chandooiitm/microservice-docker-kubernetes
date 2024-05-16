@@ -38,8 +38,8 @@
 		</dependency>
 
 		<dependency>
-			<groupId>com.h2database</groupId>
-			<artifactId>h2</artifactId>
+			<groupId>com.mysql</groupId>
+			<artifactId>mysql-connector-j</artifactId>
 			<scope>runtime</scope>
 		</dependency>
 		<dependency>
@@ -83,7 +83,7 @@
 				<version>3.4.1</version>
 				<configuration>
 					<to>
-						<image>chandooiitm/${project.artifactId}:s6</image>
+						<image>chandooiitm/${project.artifactId}:s7</image>
 					</to>
 				</configuration>
 			</plugin>

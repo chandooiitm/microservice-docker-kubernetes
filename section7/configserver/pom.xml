@@ -57,7 +57,7 @@
 				<version>3.4.1</version>
 				<configuration>
 					<to>
-						<image>chandooiitm/${project.artifactId}:s6</image>
+						<image>chandooiitm/${project.artifactId}:s7</image>
 					</to>
 				</configuration>
 			</plugin>
