@@ -1,0 +1,34 @@
+spring:
+  application:
+    name: "configserver"
+  profiles:
+    #active: native
+    #if property files are in the classpath or in the file system then we have to provide native.
+    active: git
+  cloud:
+    config:
+      server:
+        #native:
+         # search-locations: "configserver:/"
+        git:
+          uri: "https://github.com/chandooiitm/application-configuration.git"
+          default-label: master
+          clone-on-start: true
+          timeout: 5
+          force-pull: true
+
+encrypt:
+  key: "43J57N5967H523445L54KB234J6JL4452B3456L878J3U453I"
+server:
+  port: 8071
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  health:
+    readiness-state:
+      enabled: true
+    liveness-state:
+      enabled: true
